@@ -77,11 +77,12 @@
 ;; they are implemented.
 
 (map! "C-s" #'consult-line)
-(map! "C-M-s" #'avy-goto-char)
+(map! "M-s" #'avy-goto-char)
 (map! "C-x o" #'ace-window)
 (map! "C-M-r" #'raise-sexp)
+(map! "C-x C-b" #'consult-buffer)
 
-(defhydra hydra-resize-window (:hint nil)
+(defhydra hydra-resize-window   (:hint nil)
   ("h" #'shrink-window-horizontally)
   ("l" #'enlarge-window-horizontally)
   ("j" #'shrink-window)
